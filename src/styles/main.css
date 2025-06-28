@@ -1,0 +1,20 @@
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #f0f5f9;
+  color: #333;
+  margin: 0;
+  padding: 2rem;
+}
+
+.app {
+  max-width: 600px;
+  margin: auto;
+}
+
+.item {
+  background: #e6f1f5;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #bcd;
+  border-radius: 8px;
+}
