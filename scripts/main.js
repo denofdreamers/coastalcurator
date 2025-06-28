@@ -1,15 +1,17 @@
-const canvas = document.getElementById('gameCanvas');
-const ctx = canvas.getContext('2d');
+const canvas = document.getElementById("gameCanvas");
+const ctx = canvas.getContext("2d");
 
-canvas.width = 800;
-canvas.height = 600;
+// Set canvas size
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
-function gameLoop() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.fillStyle = 'lightblue';
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+// Draw a test background
+ctx.fillStyle = "#cce7ff"; // Light blue
+ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  requestAnimationFrame(gameLoop);
-}
-
-gameLoop();
+// Draw a circle (like a placeholder character)
+ctx.beginPath();
+ctx.arc(150, 150, 50, 0, Math.PI * 2);
+ctx.fillStyle = "#ff99aa"; // Light pink
+ctx.fill();
+ctx.closePath();
